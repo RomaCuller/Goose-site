@@ -1,0 +1,134 @@
+<!-- Начало галереи: 15 гусей, золотые «багетные» рамки, зум при наведении -->
+<style>
+  .gallery {
+    padding: 20px;
+    background-color: #f5f1e8; /* Тёплый бежевый фон */
+    border-radius: 16px;
+  }
+
+  /* Стили для золотой рамки-багета */
+  .gallery img {
+    width: 100%;
+    border-radius: 14px;
+    
+    /* Двойная рамка: золотая + светлая обводка для объёма */
+    border: 4px solid #d4af37;       /* Золотой цвет */
+    outline: 2px solid #f1e6bf;      /* Светлая обводка снаружи */
+    
+    /* Тень, имитирующая резьбу и глубину */
+    box-shadow: 
+      0 0 0 3px rgba(212, 175, 55, 0.4), 
+      inset 0 0 15px rgba(0,0,0,0.1);
+      
+    display: block;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    z-index: 1;
+  }
+
+  /* Эффект при наведении: увеличение и усиление блеска */
+  .gallery img:hover {
+    transform: scale(1.12);
+    cursor: zoom-in;
+    filter: brightness(1.05);
+    
+    box-shadow: 
+      0 0 0 5px rgba(212, 175, 55, 0.6), 
+      inset 0 0 25px rgba(0,0,0,0.2);
+  }
+</style>
+
+
+<div class="gallery">
+  <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 24px; justify-items: center;">
+    
+    <!-- Гусь 1: под деревом сидит -->
+    <div style="text-align: center; max-width: 320px;">
+      <img src="goose1.jpg" alt="Гусь под деревом" style="width: 100%; border-radius: 14px; border: 4px solid #d4af37; outline: 2px solid #f1e6bf; box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.4), inset 0 0 15px rgba(0,0,0,0.1); display: block;">
+      <p style="margin-top: 12px; font-family: 'Segoe UI', Roboto, Arial, sans-serif; font-weight: 600; color: #2c4a3a; font-size: 15px; line-height: 1.3;">Гусь под деревом сидит</p>
+    </div>
+
+    <!-- Гусь 2: у воды -->
+    <div style="text-align: center; max-width: 320px;">
+      <img src="goose2.jpg" alt="Гусь у воды" style="width: 100%; border-radius: 14px; border: 4px solid #d4af37; outline: 2px solid #f1e6bf; box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.4), inset 0 0 15px rgba(0,0,0,0.1); display: block;">
+      <p style="margin-top: 12px; font-family: 'Segoe UI', Roboto, Arial, sans-serif; font-weight: 600; color: #2c4a3a; font-size: 15px; line-height: 1.3;">Гусь у воды</p>
+    </div>
+
+    <!-- Гусь 3: гуси, гуси, ГУСИ! -->
+    <div style="text-align: center; max-width: 320px;">
+      <img src="goose3.jpg" alt="Гуси, гуси, ГУСИ!" style="width: 100%; border-radius: 14px; border: 4px solid #d4af37; outline: 2px solid #f1e6bf; box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.4), inset 0 0 15px rgba(0,0,0,0.1); display: block;">
+      <p style="margin-top: 12px; font-family: 'Segoe UI', Roboto, Arial, sans-serif; font-weight: 700; color: #3a2f1a; font-size: 15px; line-height: 1.3; text-transform: uppercase;">Гуси, гуси, ГУСИ!</p>
+    </div>
+
+    <!-- Гусь 4: болотный первопроходец -->
+    <div style="text-align: center; max-width: 320px;">
+      <img src="goose4.jpg" alt="Болотный первопроходец" style="width: 100%; border-radius: 14px; border: 4px solid #d4af37; outline: 2px solid #f1e6bf; box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.4), inset 0 0 15px rgba(0,0,0,0.1); display: block;">
+      <p style="margin-top: 12px; font-family: 'Segoe UI', Roboto, Arial, sans-serif; font-weight: 600; color: #4a5f3c; font-size: 15px; line-height: 1.3;">Болотный первопроходец</p>
+    </div>
+
+    <!-- Гусь 5: гусечек -->
+    <div style="text-align: center; max-width: 320px;">
+      <img src="goose5.jpg" alt="Гусечек" style="width: 100%; border-radius: 14px; border: 4px solid #d4af37; outline: 2px solid #f1e6bf; box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.4), inset 0 0 15px rgba(0,0,0,0.1); display: block;">
+      <p style="margin-top: 12px; font-family: 'Segoe UI', Roboto, Arial, sans-serif; font-weight: 600; color: #5a4f3f; font-size: 15px; line-height: 1.3;">Гусечек</p>
+    </div>
+
+    <!-- Гусь 6: гусь на травке -->
+    <div style="text-align: center; max-width: 320px;">
+      <img src="goose6.jpg" alt="Гусь на травке" style="width: 100%; border-radius: 14px; border: 4px solid #d4af37; outline: 2px solid #f1e6bf; box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.4), inset 0 0 15px rgba(0,0,0,0.1); display: block;">
+      <p style="margin-top: 12px; font-family: 'Segoe UI', Roboto, Arial, sans-serif; font-weight: 600; color: #2c4a3a; font-size: 15px; line-height: 1.3;">Гусь на травке</p>
+    </div>
+
+    <!-- Гусь 7: важный гусик -->
+    <div style="text-align: center; max-width: 320px;">
+      <img src="goose7.jpg" alt="Важный гусик" style="width: 100%; border-radius: 14px; border: 4px solid #d4af37; outline: 2px solid #f1e6bf; box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.4), inset 0 0 15px rgba(0,0,0,0.1); display: block;">
+      <p style="margin-top: 12px; font-family: 'Segoe UI', Roboto, Arial, sans-serif; font-weight: 700; color: #3a2f1a; font-size: 15px; line-height: 1.3;">Важный гусик</p>
+    </div>
+
+    <!-- Гусь 8: зелёничек -->
+    <div style="text-align: center; max-width: 320px;">
+      <img src="goose8.jpg" alt="Зелёничек" style="width: 100%; border-radius: 14px; border: 4px solid #d4af37; outline: 2px solid #f1e6bf; box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.4), inset 0 0 15px rgba(0,0,0,0.1); display: block;">
+      <p style="margin-top: 12px; font-family: 'Segoe UI', Roboto, Arial, sans-serif; font-weight: 600; color: #2a5a4a; font-size: 15px; line-height: 1.3;">Зелёничек</p>
+    </div>
+
+    <!-- Гусь 9: смотрящий в даль -->
+    <div style="text-align: center; max-width: 320px;">
+      <img src="goose9.jpg" alt="Смотрящий в даль" style="width: 100%; border-radius: 14px; border: 4px solid #d4af37; outline: 2px solid #f1e6bf; box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.4), inset 0 0 15px rgba(0,0,0,0.1); display: block;">
+      <p style="margin-top: 12px; font-family: 'Segoe UI', Roboto, Arial, sans-serif; font-weight: 600; color: #444; font-size: 15px; line-height: 1.3;">Смотрящий в даль</p>
+    </div>
+
+    <!-- Гусь 10: гусииии -->
+    <div style="text-align: center; max-width: 320px;">
+      <img src="goose10.jpg" alt="Гусииии" style="width: 100%; border-radius: 14px; border: 4px solid #d4af37; outline: 2px solid #f1e6bf; box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.4), inset 0 0 15px rgba(0,0,0,0.1); display: block;">
+      <p style="margin-top: 12px; font-family: 'Segoe UI', Roboto, Arial, sans-serif; font-weight: 700; color: #d65a31; font-size: 16px; line-height: 1.2;">Гусииии</p>
+    </div>
+
+    <!-- Гусь 11: два гуся -->
+    <div style="text-align: center; max-width: 320px;">
+      <img src="goose11.jpg" alt="Два гуся" style="width: 100%; border-radius: 14px; border: 4px solid #d4af37; outline: 2px solid #f1e6bf; box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.4), inset 0 0 15px rgba(0,0,0,0.1); display: block;">
+      <p style="margin-top: 12px; font-family: 'Segoe UI', Roboto, Arial, sans-serif; font-weight: 600; color: #2c4a3a; font-size: 15px; line-height: 1.3;">Два гуся</p>
+    </div>
+
+    <!-- Гусь 12: сколько их?! -->
+    <div style="text-align: center; max-width: 320px;">
+      <img src="goose12.jpg" alt="Сколько их?!" style="width: 100%; border-radius: 14px; border: 4px solid #d4af37; outline: 2px solid #f1e6bf; box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.4), inset 0 0 15px rgba(0,0,0,0.1); display: block;">
+      <p style="margin-top: 12px; font-family: 'Segoe UI', Roboto, Arial, sans-serif; font-weight: 700; color: #b34d2a; font-size: 15px; line-height: 1.3;">Сколько их?!</p>
+    </div>
+
+    <!-- Гусь 13: гусь в ромашках -->
+    <div style="text-align: center; max-width: 320px;">
+      <img src="goose13.jpg" alt="Гусь в ромашках" style="width: 100%; border-radius: 14px; border: 4px solid #d4af37; outline: 2px solid #f1e6bf; box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.4), inset 0 0 15px rgba(0,0,0,0.1); display: block;">
+      <p style="margin-top: 12px; font-family: 'Segoe UI', Roboto, Arial, sans-serif; font-weight: 600; color: #6a5e4e; font-size: 15px; line-height: 1.3;">Гусь в ромашках</p>
+    </div>
+
+    <!-- Гусь 14: опасный гусик (исправлено!) -->
+    <div style="text-align: center; max-width: 320px;">
+      <img src="goose14.jpg" alt="Опасный гусик" style="width: 100%; border-radius: 14px; border: 4px solid #d4af37; outline: 2px solid #f1e6bf; box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.4), inset 0 0 15px rgba(0,0,0,0.1); display: block;">
+      <p style="margin-top: 12px; font-family: 'Segoe UI', Roboto, Arial, sans-serif; font-weight: 700; color: #8a2a2a; font-size: 15px; line-height: 1.3;">Опасный гусик</p>
+    </div>
+
+    <!-- Гусь 15: гусь романтик -->
+    <div style="text-align: center; max-width: 320px;">
+      <img src="goose15.jpg" alt="Гусь романтик" style="width: 100%; border-radius: 14px; border: 4px solid #d4af37; outline: 2px solid #f1e6bf; box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.4), inset 0 0 15px rgba(
+
+
+
